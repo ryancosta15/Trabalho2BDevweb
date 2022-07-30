@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/estilizacao.css">
-    <link rel="stylesheet" href="styles/estilozap.css">
-    <link rel="icon" type="image/x-icon" href="ico/whatsapp.ico">
+    <link rel="stylesheet" href="../styles/estilozap.css">
+    <link rel="stylesheet" href="../styles/estilizacao.css">
+    <link rel="icon" type="image/x-icon" href="../ico/whatsapp.ico">
     <title>Coronazap</title>
 </head>
 <body>
     <!--sidebar-->
     <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="página_inicial.html">Home</a>
-      <a href="phpform1.html">Imc</a> 
+      <a href="../../abra_primeiro.html">Home</a>
+      <a href="../imc/phpform1.html">Imc</a> 
       <a href="coronazap.html">Coronazap</a>
-      <a href="tabela.html">Tabela</a>
+      <a href="../tabela/tabela.html">Tabela</a>
     </div>
     <div id="main">
       <button class="openbtn" onclick="openNav()">☰ </button>  

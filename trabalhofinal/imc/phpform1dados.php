@@ -3,19 +3,19 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="estiloform.css">
-    <link rel="stylesheet" href="estilizacao.css">
-    <link rel="icon" type="image/x-icon" href="ico/bmi.ico">
+    <link rel="stylesheet" href="../styles/estiloform.css">
+    <link rel="stylesheet" href="../styles/estilizacao.css">
+    <link rel="icon" type="image/x-icon" href="../ico/bmi.ico">
     <title>Resultado</title>
 </head>
 <body>
     <!--sidebar-->
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="página_inicial.html">Home</a>
-        <a href="phpform1.html">Imc</a> 
-        <a href="coronazap.html">Coronazap</a>
-        <a href="tabela.html">Tabela</a>
+      <a href="../../abra_primeiro.html">Home</a>
+      <a href="phpform1.html">Imc</a> 
+      <a href="../corona/coronazap.html">Coronazap</a>
+      <a href="../tabela/tabela.html">Tabela</a>
     </div>
     <div id="main">
         <button class="openbtn" onclick="openNav()">☰ </button>  
@@ -40,32 +40,32 @@
     switch ($age){
         case ($age >= 0.1 && $age <= 1):
             $agemsg = "Bebê";
-            $ageimg = "imagens/babyimg.jpg";
+            $ageimg = "../imagens/babyimg.jpg";
             $agealt = "bebê";
         break;
         case ($age >= 2 && $age < 12):
             $agemsg = "Criança";
-            $ageimg = "imagens/kidimg.jpg";
+            $ageimg = "../imagens/kidimg.jpg";
             $agealt = "criança";
             break;
         case ($age >= 12 && $age < 18): 
             $agemsg = "Adolescente";
-            $ageimg = "imagens/adolescente.jpg";
+            $ageimg = "../imagens/adolescente.jpg";
             $agealt = "adolescente";
             break;
         case ($age >= 18 && $age < 59):
             $agemsg = "Adulto";
-            $ageimg = "imagens/adulto.jpg";
+            $ageimg = "../imagens/adulto.jpg";
             $agealt = "adulto";
             break;
         case ($age >=60 && $age <=119): 
             $agemsg = "Idoso";
-            $ageimg = "imagens/idosoimg.jpg";
+            $ageimg = "../imagens/idosoimg.jpg";
             $agealt = "idoso";
             break;
         case ($age >119 ): 
             $agemsg = "morto";
-            $ageimg = "imagens/morto.jpg";
+            $ageimg = "../imagens/morto.jpg";
             $agealt = "cova";
             break;
     }
@@ -91,32 +91,32 @@
     switch ($imc){
         case ($imc >= 1 &&$imc < 18.5):
             $imcmsg = "Abaixo do peso";
-            $imcimg = "imagens/abaixodopeso.jpg";
+            $imcimg = "../imagens/abaixodopeso.jpg";
             $imcalt = "esqueleto";
             break;
         case ($imc >= 18.5 && $imc < 24.9):
             $imcmsg = "Peso ideal";
-            $imcimg = "imagens/pesoideal.jpg";
+            $imcimg = "../imagens/pesoideal.jpg";
             $imcalt = "doutora feliz";
             break;
         case ($imc >= 25 && $imc <= 29.9):
             $imcmsg = "Sobrepeso";
-            $imcimg = "imagens/sobrepeso.jpg";
+            $imcimg = "../imagens/sobrepeso.jpg";
             $imcalt = "barriga de chopp";
             break;
         case ($imc >= 30 && $imc <= 34.9):
             $imcmsg = "Obesidade grau I";
-            $imcimg = "imagens/obesidade1.jpg";
+            $imcimg = "../imagens/obesidade1.jpg";
             $imcalt = "gordox";
             break;
         case ($imc >= 35 && $imc <= 39.9):
             $imcmsg = "Obesidade grau II";
-            $imcimg = "imagens/obesidade2.jpg";
+            $imcimg = "../imagens/obesidade2.jpg";
             $imcalt = "pessoa rindo da comida";
             break;
         case ($imc >= 40):
             $imcmsg = "Obesidade grau III (vai pro médico pf)";
-            $imcimg = "imagens/obesidade3.jpg";
+            $imcimg = "../imagens/obesidade3.jpg";
             $imcalt = "pessoa no médico";
             break;
     }   

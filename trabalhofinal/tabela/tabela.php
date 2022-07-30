@@ -5,18 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="estilizacao.css">
-    <link rel="stylesheet" href="styles/tabelast.css">
-    <link rel="icon" type="image/x-icon" href="ico/whatsapp.ico">
+    <link rel="stylesheet" href="../styles/estilizacao.css">
+    <link rel="stylesheet" href="../styles/tabelast.css">
+    <link rel="icon" type="image/x-icon" href="../ico/numero.ico">
     <title>Tabela</title>
 </head>
 <body>
   <!--sidebar-->
   <div id="mySidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="página_inicial.html">Home</a>
-      <a href="phpform1.html">Imc</a> 
-      <a href="coronazap.html">Coronazap</a>
+      <a href="../../abra_primeiro.html">Home</a>
+      <a href="../imc/phpform1.html">Imc</a> 
+      <a href="../corona/coronazap.html">Coronazap</a>
       <a href="tabela.html">Tabela</a>
     </div>  
     <div id="main">
@@ -39,29 +39,34 @@
   $n = $_POST['n'];
   $i = -1;
   $class= "table";
+  $x = 0;
   //table maker
   switch($value){
     case 1:
       echo "<h1>números pares até $n</h1>";
       while ($i<($n-2)/2){
         $i++;
+        $x++;
         echo "<table class=$class>";
-        echo "<tr>";
-        print("<td>".  (2*$i)."</td>");
+        echo"<thead>";
+        print "<tr>". ($x)."º número par"."<th>".(2*$i)."</th>";
         echo "</tr>";
-        echo "</table>";     
+        echo "</table>";
+        echo"</thead>";    
       }
       break;
     case 2:
       echo "<h1>números ímpares até $n</h1>";
       while ($i<($n)){
         $i++;
+        $x++;
         if($i % 2 == 1 && $i!= $n){
           echo "<table class=$class>";
-          echo "<tr>";
-          print("<td>".  ($i) ."</td>");
+          echo"<thead>";
+          print "<tr>". ($x/2)."º número ímpar"."<th>".($i)."</th>";
           echo "</tr>";
           echo "</table>";
+          echo"</thead>";    
         }
       }
       break;
