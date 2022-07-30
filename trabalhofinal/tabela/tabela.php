@@ -1,3 +1,4 @@
+<!--All code made by Ryan Costa-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,48 +34,57 @@
         document.getElementById("main").style.marginLeft= "0";
       }  
       </script>
-  <?php
-  //variables
-  $value = $_POST ['op'];
-  $n = $_POST['n'];
-  $i = -1;
-  $class= "table";
-  $x = 0;
-  //table maker
-  switch($value){
-    case 1:
-      echo "<h1>números pares até $n</h1>";
-      while ($i<($n-2)/2){
-        $i++;
-        $x++;
-        echo "<table class=$class>";
-        echo"<thead>";
-        print "<tr>". ($x)."º número par"."<th>".(2*$i)."</th>";
-        echo "</tr>";
-        echo "</table>";
-        echo"</thead>";    
-      }
-      break;
-    case 2:
-      echo "<h1>números ímpares até $n</h1>";
-      while ($i<($n)){
-        $i++;
-        $x++;
-        if($i % 2 == 1 && $i!= $n){
-          echo "<table class=$class>";
-          echo"<thead>";
-          print "<tr>". ($x/2)."º número ímpar"."<th>".($i)."</th>";
-          echo "</tr>";
-          echo "</table>";
-          echo"</thead>";    
-        }
-      }
-      break;
-    default:
-      echo "<h1>Você não marcou par ou ímpar</h1>";
-      break;
-  }    
-  ?>
+      <fieldset>
+        <?php
+        //variables
+        $value = $_POST ['op'];
+        $n = $_POST['n'];
+        $i = -1;
+        $class= "table";
+        $x = 0;
+        //table maker
+        switch($value){
+          //par case
+          case 1:
+            echo "<legend><h1>Números pares até $n</h1></legend>";
+            while ($i<($n-2)/2){
+              //variables adding
+              $i++;
+              $x++;
+              //showing table "par"
+              echo "<table class=$class>";
+              echo"<thead>";
+              print "<tr>". ($x)."º número par"."<th>".(2*$i)."</th>";
+              echo "</tr>";
+              echo "</table>";
+              echo"</thead>";    
+            }
+            break;
+          //ímpar case
+          case 2:
+            echo "<legend><h1>Números ímpares até $n</h1></legend>";
+            while ($i<($n)){
+              //variables adding
+              $i++;
+              $x++;
+              //showing table "ímpar"
+              if($i % 2 == 1 && $i!= $n){
+                echo "<table class=$class>";
+                echo"<thead>";
+                print "<tr>". ($x/2)."º número ímpar"."<th>".($i)."</th>";
+                echo "</tr>";
+                echo "</table>";
+                echo"</thead>";    
+              }
+            }
+            break;
+          //if there's no radio answer
+          default:
+            echo "<h1>Você não marcou par ou ímpar</h1>";
+            break;
+        }    
+        ?>
+      </fieldset>
   <!--return-->
   <p><a href="tabela.html"><button>Voltar</button></a></p>
 </body>

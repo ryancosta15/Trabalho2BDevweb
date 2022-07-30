@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/estiloform.css">
+    <link rel="stylesheet" href="../styles/estiloform1.css">
     <link rel="stylesheet" href="../styles/estilizacao.css">
     <link rel="icon" type="image/x-icon" href="../ico/bmi.ico">
     <title>Resultado</title>
@@ -70,11 +70,11 @@
             break;
     }
     ?>
+    <!--display name-->
     <h1><?php echo"Olá $name!"?></h1>
     <h2>Você é um</h2>
-    <h1 class="redtxt">
-        <?php echo "$agemsg"?>
-    </h1>
+    <!--display message-->
+    <h1 class="redtxt"><?php echo "$agemsg"?></h1>
     <figure>
         <?php
         //display image
@@ -85,8 +85,7 @@
     //variables
     $weight = $_POST['weight'];
     $height = $_POST['height'];
-    $imc = $weight / $height **2;
-    
+    $imc = $weight / $height **2; 
     //message depending on the imc
     switch ($imc){
         case ($imc >= 1 &&$imc < 18.5):
@@ -121,10 +120,9 @@
             break;
     }   
     ?>
+    <!--display imc-->
     <h2>Seu IMC é</h2>
-    <h1 class="redtxt">
-        <?php echo number_format($imc, 1, ',') . " ($imcmsg)";?>
-    </h1>
+    <h1 class="redtxt"><?php echo number_format($imc, 1, ',') . " ($imcmsg)";?></h1>
     <figure>
         <?php   
         //display image

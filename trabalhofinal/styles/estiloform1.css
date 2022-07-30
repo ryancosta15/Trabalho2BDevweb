@@ -1,22 +1,22 @@
+/*All code made by Ryan Costa*/
+/*variables*/
 :root{
     --darkercolor:#1F2235;
     --darkcolor:#22253B;
     --lightcolor:#FF4456;
 }
+/*styling*/
 body {
    background-color:var(--darkercolor);
    color: white;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: large;
    text-align: center;
+   font-size: larger;
 }
-fieldset {
-    display: block;
-    border: 1px solid var(--lightcolor);
-    margin-top: 20px;
-    margin-top: 1px;
-    margin-left: 40%;
-    margin-right: 40%;
+fieldset{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    border:1px solid white;
 }
 input {
     border: none;

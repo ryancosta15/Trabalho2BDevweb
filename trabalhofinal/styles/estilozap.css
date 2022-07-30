@@ -1,13 +1,17 @@
+/*All code made by Ryan Costa*/
+/*variables*/
 :root{
     --darkercolor:#1F2235;
     --darkcolor:#22253B;
     --lightcolor:#FF4456;
 }
+/*styling*/
 fieldset{
     text-align: center;
     margin-left: 30%;
     margin-right: 30%;
 }
+/*radio button style*/
 input {
     appearance: none; 
     border-radius: 50%;
@@ -23,6 +27,7 @@ input {
   input:checked {
     border: 6px solid white;
   }
+/*button style*/
 button {
     border:2px solid var(--lightcolor);
     border-radius: 4px;

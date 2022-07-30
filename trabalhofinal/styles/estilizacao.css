@@ -1,3 +1,4 @@
+/*Almost all code made by Ryan Costa*/
 /*variables*/ 
 :root{
     --darkercolor:#1F2235;
@@ -9,7 +10,7 @@ body {
     background-color:var(--darkercolor) ;
     color:var(--lightcolor);
   }
-  
+/*sidebar style (by Caio Lopes *changed)*/ 
   .sidebar {
     height: 100%;
     width: 0;
