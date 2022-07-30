@@ -1,0 +1,41 @@
+:root{
+    --darkercolor:#1F2235;
+    --darkcolor:#22253B;
+    --lightcolor:#FF4456;
+}
+fieldset{
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+input {
+    appearance: none; 
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    border: 2px solid var(--lightcolor);
+    transition: 0.2s all linear;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+    margin-bottom: 4px;
+  } 
+  input:checked {
+    border: 6px solid white;
+  }
+button {
+    border:2px solid var(--lightcolor);
+    border-radius: 4px;
+    background-color:var(--darkcolor);
+    color: white; 
+    font-size: large; 
+    margin: 10px;
+}
+button:hover{
+    border:2px solid var(--lightcolor);
+    border-radius: 4px;
+    background-color:var(--lightcolor);
+    color: var(--darkercolor); 
+    font-size: large; 
+    margin: 10px;
+}

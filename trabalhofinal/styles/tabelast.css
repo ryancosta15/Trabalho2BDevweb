@@ -1,0 +1,73 @@
+/*variables*/ 
+:root{
+    --darkercolor:#1F2235;
+    --darkcolor:#22253B;
+    --lightcolor:#FF4456;
+}*{
+    text-align: center;
+}
+/*Input syle*/ 
+input[type=radio] {
+    appearance: none; 
+    border-radius: 50%;
+    width: 19px;
+    height: 19px;
+    border: 2px solid var(--lightcolor);
+    transition: 0.2s all linear;
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
+    margin-bottom: 4px;
+} 
+input[type=radio]:checked {
+    border: 6px solid white;
+}
+input[type=text]{
+    appearance: none; 
+    width: 354px;
+    height: 42px;
+    color: white;
+    border: 2px solid var(--lightcolor);
+    background-color: var(--darkcolor);
+    transition: 0.2s all linear;
+    margin-right: 10px;
+    top: 4px;
+    margin-bottom: 4px;   
+}
+input[type=text]:hover{
+    border: 2px solid white;   
+}
+::placeholder { 
+    color: var(--lightcolor);
+}
+/*Fieldset centered*/
+fieldset{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/*Button style*/
+button {
+    border:2px solid var(--lightcolor);
+    border-radius: 4px;
+    background-color:var(--darkcolor);
+    color: white; 
+    font-size: large; 
+    margin: 10px;
+}
+button:hover{
+    border:2px solid var(--lightcolor);
+    border-radius: 4px;
+    background-color:var(--lightcolor);
+    color: var(--darkercolor); 
+    font-size: large; 
+    margin: 10px;
+}
+/*Table style*/
+.table{
+    border:2px solid var(--lightcolor);
+    border-radius: 4px;
+    background-color:var(--darkcolor);
+    color: white; 
+    font-size: large; 
+    margin-left: 49.2%;
+}

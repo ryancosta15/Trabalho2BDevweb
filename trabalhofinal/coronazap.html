@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Coronazap</title>
+    <link rel="stylesheet" href="estilozap.css">
+    <link rel="stylesheet" href="estilizacao.css">
+    <link rel="icon" type="image/x-icon" href="ico/whatsapp.ico">
+</head>
+<body>
+    <!--sidebar-->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="página_inicial.html">Home</a>
+        <a href="phpform1.html">Imc</a> 
+        <a href="coronazap.html">Coronazap</a>
+        <a href="tabela.html">Tabela</a>
+      </div>
+      <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ </button>  
+      </div>
+      <!--script-->
+      <script>
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+      </script> 
+    <!--page center-->
+    <fieldset>
+        <legend><h1>Bem vindo ao Coronazap</h1></legend>
+        <h2>Leia os tópicos abaixo e escolha qual deseja se informar sobre</p>
+            <form action="corona.php" method="post"">
+                <input type="radio" name="info" value="1">O Coronavírus &#x1F9A0 <br>
+                <input type="radio" name="info" value="2">Transmissão &#128567 <br>
+                <input type="radio" name="info" value="3">Sintomas &#x1F912 <br>
+                <input type="radio" name="info" value="4">Prevenção &#x1F9FC <br>
+                <input type="radio" name="info" value="5">Diagnóstico &#x270D <br>
+                <input type="radio" name="info" value="6">Isolamento Domiciliar &#x1F3E0 <br>
+                <input type="radio" name="info" value="7">Tratamento &#x1F691 <br>
+                <input type="radio" name="info" value="8">Ação no Brasil &#x1F1E7&#x1F1F7<br>
+                <input type="radio" name="info" value="9">Fake ou Verdade &#x2049<br>
+                <input type="radio" name="info" value="10">Profissional de saúde &#x1F48A<br>
+                <button type="submit">Enviar</button>
+            </form>
+ </fieldset> 
+</body>
+</html>

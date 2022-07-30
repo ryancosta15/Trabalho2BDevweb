@@ -1,0 +1,11 @@
+/*center texts/inputs & justify*/ 
+*{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
+  .texto{
+    text-align: justify;
+    margin-left: 25%;      
+  }

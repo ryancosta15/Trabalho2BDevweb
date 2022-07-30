@@ -1,0 +1,45 @@
+:root{
+    --darkercolor:#1F2235;
+    --darkcolor:#22253B;
+    --lightcolor:#FF4456;
+}
+body {
+   background-color:var(--darkercolor);
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: large;
+   text-align: center;
+}
+fieldset {
+    display: block;
+    border: 1px solid var(--lightcolor);
+    margin-top: 20px;
+    margin-top: 1px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+input {
+    border: none;
+    margin: 10px;
+    background-color: white;
+    outline: none;
+}      
+.redtxt {
+    color: var(--lightcolor);
+}
+button {
+    border:2px solid var(--lightcolor);
+    border-radius: 4px;
+    background-color:var(--darkcolor);
+    color: white; 
+    font-size: large; 
+    margin: 10px;
+}
+button:hover{
+    border:2px solid --lightcolor;
+    border-radius: 4px;
+    background-color:var(--lightcolor);
+    color: var(--darkercolor); 
+    font-size: large; 
+    margin: 10px;
+}

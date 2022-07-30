@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estiloform.css">
+    <link rel="stylesheet" href="estilizacao.css">
+    <link rel="icon" type="image/x-icon" href="ico/bmi.ico">
+    <title> Formulário</title>
+</head>
+<body>
+    <!--sidebar-->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="página_inicial.html">Home</a>
+      <a href="phpform1.html">Imc</a> 
+      <a href="coronazap.html">Coronazap</a>
+      <a href="tabela.html">Tabela</a>
+    </div>
+    <div id="main">
+      <button class="openbtn" onclick="openNav()">☰ </button>  
+    </div>
+    <!--script-->
+    <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+    <!--form--> 
+    <form action="phpform1dados.php" method="POST">
+        <fieldset>
+            <legend>Formulário</legend>
+            <label for="name">Nome:</label>
+            <input type="text"  name=name><br>
+            <label for="age">Idade:</label>
+            <input type="number" name="age"><br>
+            <label for="weight">Peso:</label>
+            <input type="text" name="weight"><br>
+            <label for="height">Altura:</label>
+            <input type="text" name="height"><br>
+            <button type="submit" name="enviar">Enviar</button>
+            <button type="reset" name="limpar">Limpar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

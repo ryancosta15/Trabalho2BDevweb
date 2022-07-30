@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="trabalhofinal/styles/estilizacao.css">
+  <link rel="stylesheet" href="trabalhofinal/styles/homepage.css">
+  <link rel="icon" type="image/x-icon" href="ico/pagina-inicial.ico">
+  <title>Página inicial</title>
+</head>
+<body>
+  <!--sidebar-->  
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="trabalhofinal/página_inicial.html">Home</a>
+    <a href="trabalhofinal/phpform1.html">Imc</a> 
+    <a href="trabalhofinal/coronazap.html">Coronazap</a>
+    <a href="trabalhofinal/   tabela.html">Tabela</a>
+  </div>  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+  </div>
+  <!--script-->
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }  
+    </script> 
+    <!--page center-->
+    <h1>Atividade avaliativa 2</h1>
+    <p class="texto">
+      Esse é o site feito por Ryan Costa da Info-131 como atividade avaliativa, tendo como fim ser um acervo 
+      dos trabalhos selecionados pelo professor <br>
+      Eles podem ser encontrados na navbar localizada no lado esquerdo da tela, aperte o botão "☰" para abrir ela. <br>  
+      Navegue livremente entre os trabalhos, a navbar sempre estará disponível seja para ir à uma págin ou para voltar dela. <br>
+      O site foi escrito nas linguagens: html, css, php e javascript, possuindo uma paleta de cores minimalista, constituida por: <br>
+    </p>
+    <input type="color" value="#1F2235"> 
+    <input type="color" value="#22253B"> 
+    <input type="color" value="#FF4456"> 
+    <input type="color" value="#ffffff"> 
+    <p class="texto">Certifique-se de sempre preencher todos os dados nos formulários, para que sua experiência não seja atrapalhada por mensagens de erro.</p>
+    <iframe src="https://giphy.com/embed/ASd0Ukj0y3qMM" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen title=""></iframe>
+</body>
+</html>          
